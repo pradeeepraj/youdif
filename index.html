@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Youdif</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name ="keywords" content ="Youdif,business,ads"/>
+	<meta name ="description" content ="Business ad template"/>
+	<meta name="language" content="French">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/bootstrap.js">
+	<script type="text/javascript" 
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
+    </script>
+    <script>
+    	$(document).ready(function(){
+           $(".menu__bar .fa-times").hide();
+          //$(".nav__right").show();
+
+           $(".menu__bar .fa-bars").click(function(){
+           	$(this).hide();
+           	$(".menu__bar .fa-times").show();
+           	//$(".nav__right").addClass("active");
+           	$(".nav__right").show();
+           });
+           $(".menu__bar .fa-times").click(function(){
+             $(this).hide();
+             $(".menu__bar .fa-bars").show();
+            // $(".nav__right").removeClass("active");
+             $(".nav__right").hide();
+           });
+           $(window).scroll(function() {
+    if ($(document).scrollTop() > 200) {
+      $("header").addClass("active");
+    } else {
+      $("header").removeClass("active");
+    }
+  });
+    	});
+    </script>
+</head>
+<body>
+	<header>
+		<div class="container header__nav">
+		    <nav class="nav__desk">
+				<a class="logo" href="#">
+					<img src="assets/images/logo.png">
+				</a>
+				<div class="nav__right">
+						<a class="nav__list__item" href="#">Qui Sommes-Nous</a>
+						<a class="nav__list__item" href="#">Contact</a>
+						<a class="btn btn--primary nav__list__item" href="#">Connexion</a>
+				</div>
+			</nav>
+			<nav class="nav__container nav__mob">
+			<div class="menu__bar">
+				<i class="fas fa-bars"></i>
+				<i class="fas fa-times"></i>
+			</div>
+				<a class="logo-mob" href="#">
+					<img src="assets/images/logo.png">
+				</a>
+				<div class="nav__right">
+						<a class="nav__list__item" href="#">Qui Sommes-Nous</a>
+						<a class="nav__list__item" href="#">Contact</a>
+						<a class="btn btn--primary nav__list__item" href="#">Connexion</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<section class="hero">
+		<div class="container hero__cont">
+			<h1>Lorem Ipsum,
+				is simply dummy text of the printing.</h1>
+				<button class="btn btn--secondary btn-hero">DIFFUSER MON ANNONCE</button>
+			</div>
+		</section>
+		<section class="container workflow">
+			<h2>
+				Notre interface tout en un, 100% web
+			</h2>
+			<p class="workflow__description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+			<ul class="workflow__content">
+				<li class="workflow__content__list">
+					<h4 class="workflow__content__heading">Bien disponible</h4>
+					<figure class="item icon-building"></figure>
+					<span class="border"></span>
+				</li>
+				<li class="workflow__content__list">
+					<h4 class="workflow__content__heading">Saisie d’annonces</h4>
+					<p class="workflow__content__description">Lorem Ipsum is simply dummy text.</p>
+					<figure class="item icon-para"></figure>
+					<span style="border: none;" class="border"></span>
+				</li>
+				<li class="workflow__content__list">
+					<h4 class="workflow__content__heading">Vérification</h4>
+					<p class="workflow__content__description">Lorem Ipsum is simply dummy text.</p>
+					<figure class="item icon-verify"></figure>
+					<span class="right-curve"></span>
+				</li>
+				<li class="workflow__content__list workflow__content__list-space">
+					<figure class="item icon-direction"></figure>
+					<span style="border: none;" class="border"></span>
+					<span class="left-curve"></span>
+					<h4 class="workflow__content__heading">Multidiffusion</h4>
+					<p class="workflow__content__description">Lorem Ipsum is simply dummy text.</p>
+					
+				</li>
+				<li class="workflow__content__list workflow__content__list-space">
+					<figure class="item icon-pie"></figure>
+					<span class="border"></span>
+					<h4 class="workflow__content__heading">Suivi & Gestion</h4>
+					<p class="workflow__content__description">Lorem Ipsum is simply dummy text.</p>
+					
+				</li>
+				<li class="workflow__content__list workflow__content__list-space">
+					<figure class="item icon-user"></figure>
+					<h4 class="workflow__content__heading">Nouveaux contacts</h4>
+					
+				</li>
+			</ul>
+		</section>
+		<section class="feature">
+			<div class="container feature__content">
+				<div class="feature__content__left">
+					<p class="feature__content__left__description">L’efficacité au centre de notre préoccupation</p>
+					<button class="btn btn--primary btn--feature">Diffuser mon annoce</button>
+				</div>
+				<div class="feature__content__right">
+					<div class="feature__content__wrapper">
+						<h3 class="feature__content__wrapper__title">Simple</h3>
+						<p class="feature__content__wrapper__description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+					</div>
+					<div class="feature__content__wrapper">
+						<h3 class="feature__content__wrapper__title">Sur-mesure</h3>
+						<p class="feature__content__wrapper__description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+					</div>
+					<div class="feature__content__wrapper">
+						<h3 class="feature__content__wrapper__title">Performant</h3>
+						<p class="feature__content__wrapper__description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<section class="pricing">
+			<div class="container">
+				<h2 class="pricing__title">Une totale maîtrise de votre budget</h2>
+				<p class="pricing__desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+				<div class="pricing__cont">
+					<div class="pricing__list">
+						<div class="pricing__list__header">
+							<h4>Selection</h4>
+							<span>5€<small>ht</small></span>
+							<p>Par mois / par annonce</p>
+						</div>
+						<div class="pricing__list__features">
+							<ul>
+								<li>Saisie simplifiée</li>
+								<li>Diffusion sur les sites selectionnés</li>
+								<li>Suivi & gestion de l’annonce</li>
+								<li>Vérification de l’annonce <br>20€ HT par annonce</li>
+								<button class="btn btn--secondary btn-select">Chosir L’offre Selection</button>
+							</ul>
+						</div>
+					</div>	
+					<div class="pricing__list">
+						<div class="pricing__list__header pricing__list__header--global">
+							<h4>Global</h4>
+							<span>30€<small>ht</small></p>
+							<p>Par mois / par annonce</p>
+						</div>
+						<div class="pricing__list__features pricing__list__features--global">
+							<ul>
+								<li>Saisie simplifiée</li>
+								<li>Diffusion sur les sites selectionnés</li>
+								<li>Suivi & gestion de l’annonce</li>
+								<li>Vérification de l’annonce <br>20€ HT par annonce</li>
+								<button class="btn btn--primary btn-select">Chosir L’offre Selection</button>
+							</ul>
+						</div>
+					</div>	
+				</div>
+			</section>	
+			<section class="about">
+				<ul class="container about__menu">
+					<li class="about__menu__list">
+						<figure class="item icon-economy"></figure>
+						<h4>Économique</h4>
+						<p>There are many variations of passages of Lorem Ipsum available.</p>
+					</li>
+					<li class="about__menu__list">
+						<figure class="item icon-receipt"></figure>
+						<h4>Maîtrise</h4>
+						<p>There are many variations of passages of Lorem Ipsum availablet.</p>
+					</li>
+					<li class="about__menu__list">
+						<figure class="item icon-handout"></figure>
+						<h4>Dégressif</h4>
+						<p>There are many variations of passages of Lorem Ipsum available.</p>
+					</li>
+				</ul>		
+			</section>
+			<footer>
+				<div class="container">
+					<a class="footer__logo">
+						<img src="assets/images/footer-logo.png">
+					</a>
+					<div class="footer__nav">
+					   <ul class="footer__link">
+						<li><a href="" class="footer__item">Qui sommes-nous?</a></li>
+						<li><a href="" class="footer__item">Contact</a></li>
+						</ul>
+						<ul class="footer__link">
+						<li><a href="" class="footer__item">Connextion</a></li>
+						<li><a href="" class="footer__item">faq</a></li>
+						</ul>
+						<ul class="footer__link">
+						<li><a href="" class="footer__item">recrutement</a></li>
+						<li><a href="" class="footer__item">Fournisseur</a></li>
+						</ul>
+						<ul class="footer__link">
+						<li><a href="" class="footer__item">Confidentialite</a></li>
+						<li><a href="" class="footer__item">Cgu</a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</footer>
+</body>
+</html>
